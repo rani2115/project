@@ -1,0 +1,217 @@
+<!-- java script is an object  based cripting languages . that is light weight and cross platform.
+java script is not compiled but translated. 
+
+javacsript has its own translator that is used to translate the javascript code.
+
+javascript translator is present inside web browser. 
+--> 
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title></title>
+	<!-- <script type="text/javascript">
+		//this is the example of head section js.
+		// this is call by body js.
+		function abc(){
+			alert("welcome Rani")
+		}
+	</script> -->
+	<script type="text/javascript" src="gunjanmam.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		document.write("Welcome to the world of javascript"+"<br>");
+
+		 //its used for print and document .write is predefine function.
+		
+	
+
+	</script>
+
+<!-- 	variables is just name of memory location , there are two types of  variables in javascript: 1) local variable and 2) globle variable.
+
+variable which are declare in side of function is called local variable and variable which are declare out side of finction is known as globle variable.
+ -->
+<script type="text/javascript">
+	function display(){
+		var a=50.9; // local variable.
+		var b=23;
+		var c=a+b;
+		document.write("sum ="+c+"<br>"); // , is used only integer and float value. its not work in string , it string we can use + for add .
+	}
+	display(); // for calling function of javascript.
+</script>
+
+<script type="text/javascript">
+	var a= 'gunjan \n'
+	function display(){
+		document.write(a);
+
+	}
+	function xyz(){
+		document.write(a+"<br>") // here <br> are use  for new line..
+		document.write('add'+" "+'two'+" "+"<br>");
+	}
+	xyz();
+	display();
+/* control statement in javascript
+ there are three types of control statement in javascript :
+ 1) if statement:---
+		syntax: if (expression){
+			code...
+		}
+2) if-else statement:-----
+	syntax: if (condition){
+		code... or statement
+	}
+	else{
+		code.. statement
+	 }
+3) if- else- if statement:----
+means nested-if
+*/
+
+if (5<10){
+	c=10+13
+	document.write(c+"<br>")
+}
+var num=prompt("enter number") // prompt in javascript is used to enter value by user.
+
+
+if (num%2==0){
+	document.write("even");
+}
+else{
+	document.write("odd"+"<br>")
+}
+
+var a=15;
+var b=3;
+ var c=13;
+ if (a<b){
+ 	document.write("a is greater");
+
+ }
+ else if(a<c){
+ 	document.write("c is greater")
+ }
+ else if(b<c && c<a){
+ 	document.write('c is greater')
+ }
+  else{
+ 	document.write('b is greater')
+ }
+</script>
+
+<!-- 
+types of js:
+	there are 3 places to put javascript code
+		1) Body section.
+		2) Head section.
+		3) External js
+ -->
+
+<script type="text/javascript">
+	alert("Welcome to the world of javascript");
+</script>
+<form>
+	<input type="submit" name="" value="click" onclick="abc()">
+
+</form>
+
+<!-- LOOPS in js:--
+are used to iterate the piece of codes
+1) for loop 2) while loop 3) do while loop
+
+	for loop:-
+		for loop iterates the elements for the fixed number of times.
+
+	for syntex:-
+		for(initial; conditions; increment){
+			statement...;
+		}
+ -->
+ <script type="text/javascript">
+ 	 
+ 	 for (i=0; i<=10;i++){
+ 	 	document.write(i+" ")
+ 	 }
+ 	 document.write("<br>")
+ 	 var i=1
+ 	 while(i<=10){
+ 	 	document.write(i+"  ");
+ 	 	i++;
+ 	 }
+ 	 document.write("<br>")
+ 	 y=11
+
+ 	 do{
+ 	 	document.write(y+"<br>");
+ 	 	y++;
+ 	 }
+ 	 while(y<=20);
+ </script>
+
+ <!-- 
+ 	  strings in js:--
+ 	 		strings is an object that represents a sequence of character.
+ 	 		 -->
+ 	 		 <script type="text/javascript">
+ 	 		 	var a ="welcome to the world of javascript";
+ 	 		 	var x = "John";
+				var y = new String("John");
+ 	 		 	document.write(a+" "+"<br>");
+ 	 		 	document.write(typeof x+"<br>");
+ 	 		 	document.write(typeof y+"<br>");
+ 	 		 	if(x===y){ //"==" is used for equal to and "===" is used for not equal to.
+ 	 		 		document.write("same");
+ 	 		 	}
+ 	 		 	else{
+ 	 		 		document.write("different"+"<br>");
+ 	 		 	}
+</script><script type="text/javascript">
+ 	 		 	var s1="javascript";
+ 	 		 	var s2="welcome";
+ 	 		 	var s3 =s1.concat(" ",s2);
+ 	 		 	document.write(s3+"<br>");
+ 	 		 </script>
+
+<!-- DAY-3 
+
+ 1) toLowerCase() method:--
+ 				it used for convert all string in lowercase.
+
+ 2) toUpperCase() method:--
+ 				it used for covert all strings in uppercase.
+
+ 3) trim() method:-- # now in js its not used.
+ 				it used for remove whitespace in a string.
+
+
+ 				 -->
+<script type="text/javascript">
+	var s1="welcome to the WORLD Of javascript";
+	var s2=s1.toLowerCase();
+	document.write(s2+"<br>");
+	var s2=s1.toUpperCase();
+	document.write(s2+"<br>");
+
+	var a="      javascript welcome    ";
+	//var b=a.trim();
+	document.write(a+"<br>")
+
+	 function display(){
+	 	var s=document.gunjan.name.value;
+	 	alert("welcome: "+s);
+	 }
+
+</script>
+<form name="gunjan">
+	ENter name:<input type="text" name="name">
+	<input type="button" onclick="display()" value="click">
+</form>
+
+</body>
+
+</html>
